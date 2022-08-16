@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+.container {
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem;
+}
+
+.cell div {
+    height: 130px;
+}
+
+.cell {
+    position: relative;
+}
+
+.front {
+    border: 2px solid #a6a6a6;
+}
+
 img {
     height: 100px;
     width: 100px;
