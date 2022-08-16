@@ -20,6 +20,12 @@
 }
 
 .front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 2px solid #a6a6a6;
 }
 
