@@ -61,7 +61,11 @@ h3 {
     align-items: center;
     border: 2px solid #a6a6a6;
     background-color: #f2f2f2;
-     /* transform: rotateY(90deg); */
+    transform: rotateY(90deg);
+}
+
+.flip {
+    transform: rotateY(0deg);
 }
 
 .back {

@@ -1,8 +1,10 @@
 const card = document.querySelectorAll('.cell');
+const front = document.querySelectorAll('.front')
 
 
-
-
+/**
+ * Function to shuffle the images on each page refresh
+ */
 function shuffleImage() {
 
 
@@ -15,3 +17,20 @@ function shuffleImage() {
     });
 };
 shuffleImage();
+
+/**
+ * Function to reveal the image when box is clicked
+ */
+
+function clicking() {
+
+    for(let i =0; i < card.length; i++){
+
+        card[i].addEventListener('click' , ()=> {
+            
+            front[i].classList.add('flip')
+        })
+
+    }
+}
+clicking()
