@@ -68,6 +68,10 @@ h3 {
     transform: rotateY(0deg);
 }
 
+.match {
+    transform: rotateY(0deg);
+}
+
 .back {
     background-color: #333;
 }
