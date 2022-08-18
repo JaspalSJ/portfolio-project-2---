@@ -1,6 +1,8 @@
 const card = document.querySelectorAll('.cell');
 const front = document.querySelectorAll('.front')
 const container = document.querySelector('.container')
+const score = document.querySelector('.score span')
+
 
 /**
  * Function to shuffle the images on each page refresh
@@ -68,6 +70,12 @@ clicking()
 function match(cardOne , cardTwo){
 
     if(cardOne.dataset.index == cardTwo.dataset.index){
+
+        /**
+         * Increments the score by 1 after matching two images
+         */
+
+        score.innerHTML = parseInt(score.innerHTML) + 1
 
         cardOne.classList.remove('flip')
         cardTwo.classList.remove('flip')
