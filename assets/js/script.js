@@ -1,6 +1,6 @@
 const card = document.querySelectorAll('.cell');
 const front = document.querySelectorAll('.front')
-
+const container = document.querySelector('.container')
 
 /**
  * Function to shuffle the images on each page refresh
@@ -43,6 +43,14 @@ function clicking() {
             const flippedCard = document.querySelectorAll('.flip')
 
             if(flippedCard.length == 2){
+
+                container.style.pointerEvents = 'none'
+
+                setInterval( ()=> {
+
+                    container.style.pointerEvents = 'all'
+
+                }, 1000);
                 match(flippedCard[0] , flippedCard[1])
             }
         })
@@ -60,6 +68,9 @@ clicking()
 function match(cardOne , cardTwo){
 
     if(cardOne.dataset.index == cardTwo.dataset.index){
+
+        cardOne.classList.remove('flip')
+        cardTwo.classList.remove('flip')
 
 
         cardOne.classList.add('match')
