@@ -72,6 +72,10 @@ h3 {
     transform: rotateY(0deg);
 }
 
+.show {
+    transform: rotateY(0deg);
+}
+
 .back {
     background-color: #333;
 }

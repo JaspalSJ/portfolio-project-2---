@@ -26,6 +26,17 @@ function clicking() {
 
     for(let i =0; i < card.length; i++){
 
+        /**
+         * Reveals the images on page refresh,
+         * then hides after 1.5 seconds have passed
+         */
+
+        front[i].classList.add('show')
+
+        setInterval( () => {
+            front[i].classList.remove('show')
+        }, 1500),
+
         card[i].addEventListener('click' , ()=> {
             
             front[i].classList.add('flip')
