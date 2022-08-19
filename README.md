@@ -10,3 +10,19 @@ The player can click on each image to briefly reveal it, and a second image to b
 
 # Testing
 
+- HTML
+  - No errors were found when passing through the official W3C Validator
+- CSS
+  - No errors were found when passing through the official W3C Validator
+- JavaScript
+  - No errors were found when passing through the Jshint Validator
+    - The following metrics were returned:
+    - There are 8 functions in this file.
+    - Function with the largest signature take 2 arguments, while the median is 0.
+    - Largest function has 7 statements in it, while the median is 2.5.
+    - The most complex function has a cyclomatic complexity value of 2 while the median is 1.
+    
+    - Three warnings:
+    - (38) Functions declared within loops reference an outer scoped variable may lead to confusing semantics. (i)
+    - (42) Functions declared within loops reference an outer scoped variable may lead to confusing semantics. (i, match)
+    - (58) Expected an assignment or function call and instead saw an expression.
