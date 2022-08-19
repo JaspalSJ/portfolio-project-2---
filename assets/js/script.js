@@ -1,7 +1,7 @@
 const card = document.querySelectorAll('.cell');
-const front = document.querySelectorAll('.front')
-const container = document.querySelector('.container')
-const score = document.querySelector('.score span')
+const front = document.querySelectorAll('.front');
+const container = document.querySelector('.container');
+const score = document.querySelector('.score span');
 
 
 /**
@@ -12,12 +12,12 @@ function shuffleImage() {
 
     card.forEach(c=>{
 
-        const num = [...Array(card.length).keys()]
-        const random = Math.floor(Math.random()*card.length)
+        const num = [...Array(card.length).keys()];
+        const random = Math.floor(Math.random()*card.length);
 
-        c.style.order = num[random]
+        c.style.order = num[random];
     });
-};
+}
 shuffleImage();
 
 /**
@@ -33,33 +33,33 @@ function clicking() {
          * then hides after 1.5 seconds have passed
          */
 
-        front[i].classList.add('show')
+        front[i].classList.add('show');
 
         setInterval( () => {
-            front[i].classList.remove('show')
+            front[i].classList.remove('show');
         }, 1500),
 
         card[i].addEventListener('click' , ()=> {
             
-            front[i].classList.add('flip')
-            const flippedCard = document.querySelectorAll('.flip')
+            front[i].classList.add('flip');
+            const flippedCard = document.querySelectorAll('.flip');
 
             if(flippedCard.length == 2){
 
-                container.style.pointerEvents = 'none'
+                container.style.pointerEvents = 'none';
 
                 setInterval( ()=> {
 
-                    container.style.pointerEvents = 'all'
+                    container.style.pointerEvents = 'all';
 
                 }, 1000);
-                match(flippedCard[0] , flippedCard[1])
+                match(flippedCard[0] , flippedCard[1]);
             }
-        })
+        });
 
     }
 }
-clicking()
+clicking();
 
 /**
  * Function to match the cards together,
@@ -75,21 +75,21 @@ function match(cardOne , cardTwo){
          * Increments the score by 1 after matching two images
          */
 
-        score.innerHTML = parseInt(score.innerHTML) + 1
+        score.innerHTML = parseInt(score.innerHTML) + 1;
 
-        cardOne.classList.remove('flip')
-        cardTwo.classList.remove('flip')
+        cardOne.classList.remove('flip');
+        cardTwo.classList.remove('flip');
 
 
-        cardOne.classList.add('match')
-        cardTwo.classList.add('match')
+        cardOne.classList.add('match');
+        cardTwo.classList.add('match');
 
     } else {
         
         setTimeout( () => {
 
-        cardOne.classList.remove('flip')
-        cardTwo.classList.remove('flip')
+        cardOne.classList.remove('flip');
+        cardTwo.classList.remove('flip');
         }, 1000);
     }
 }
