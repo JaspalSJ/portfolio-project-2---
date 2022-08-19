@@ -26,3 +26,10 @@ The player can click on each image to briefly reveal it, and a second image to b
     - (38) Functions declared within loops reference an outer scoped variable may lead to confusing semantics. (i)
     - (42) Functions declared within loops reference an outer scoped variable may lead to confusing semantics. (i, match)
     - (58) Expected an assignment or function call and instead saw an expression.
+
+## Deployment
+
+- The site was deployed to GitHub Pages. The steps to deploy are as follows:
+ - In the GitHub repository, navigate to the Settings tab
+ - In the left sidebar, in the Code and Automation section, there is a page called Pages.
+ - In the source drop-down menu, select the main branch and save, the page will then serve the link to the completed website.
