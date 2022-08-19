@@ -33,3 +33,5 @@ The player can click on each image to briefly reveal it, and a second image to b
  - In the GitHub repository, navigate to the Settings tab
  - In the left sidebar, in the Code and Automation section, there is a page called Pages.
  - In the source drop-down menu, select the main branch and save, the page will then serve the link to the completed website.
+- The live site can be accessed at: https://jaspalsj.github.io/portfolio-project-2/
+
